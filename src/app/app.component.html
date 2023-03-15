@@ -1,0 +1,9 @@
+<div class="container mt-4">
+  <h1>Juego de dados</h1>
+  <div>
+    <img src='{{dado1}}' alt="dado1">
+    <img src='{{dado2}}' alt="dado1">
+  </div>
+  <button class="btn btn-primary" (click)="changeDices()">Tirar dados</button>
+  <h2 *ngIf="checkEqualDices()">Ganaste!</h2>
+</div>
